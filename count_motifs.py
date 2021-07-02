@@ -34,9 +34,6 @@ if __name__=="__main__":
     cfg = ConfigParser(interpolation=ExtendedInterpolation())
     cfg.read(params.config)
     
-    cfg = ConfigParser(interpolation=ExtendedInterpolation())
-    cfg.read(params.config)
-    
     # Read graph input
     G = Graph.Read_GraphML(cfg['parameters']['input'])
     G.motif_store = []
