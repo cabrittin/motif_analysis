@@ -20,7 +20,7 @@ def loop_through_subgraphs(func):
         
         #Get isoclasses
         isoclasses = None
-        if ',' in cfg['isoclasses']:
+        if cfg['isoclasses'] not in ['ALL','all','All']:
             isoclasses = [int(n) for n in cfg['isoclasses'].split(',')]
         
         data = []
@@ -41,6 +41,16 @@ def unique_groups(*args,**kwargs):
         groups = [subgraph_grp[v] for v in vertices]
         unique_grps = len(set(groups))
         return groups + [unique_grps]
+    except KeyError:
+        print(f"KeyError for row: {vertices}")
+        return None
+
+@loop_through_subgraphs
+def cell_position(*args, **kwargs):
+    vertices, cell_class = args
+    try: 
+        groups = [cell_class[v] for v in vertices]
+        return groups 
     except KeyError:
         print(f"KeyError for row: {vertices}")
         return None

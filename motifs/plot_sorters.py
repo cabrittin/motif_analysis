@@ -12,6 +12,7 @@ Module for ploting results from subgraph sorters
 from pandas import DataFrame
 import seaborn as sns
 import matplotlib.pyplot as plt
+import csv
 
 def unique_groups(func):
     def wrapper(data):
@@ -44,4 +45,19 @@ def unique_domains(plots):
 def unique_layers(plots):
     ax,df,df2 = plots
     for _ax in ax: _ax.set_xlabel('# brain map layers')
+
+
+def write_counter(data):
+    counter = {}
+    for d in data:
+        for (i,cell) in enumerate(d[4:]):
+            if cell not in counter: counter[cell] = [0,0,0]
+            counter[cell][i] += 1
+
+    csv_file = 'data/subgraph_position_counter.csv'
+    with open(csv_file, 'w') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        for k,v in counter.items():
+            csvwriter.writerow([k]+v)
+
  
