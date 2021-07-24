@@ -26,6 +26,7 @@ with open("C:/Users/A N Other/motif_analysis/mat/anatomical_classification.csv",
     anatom = csv.reader(inp)
     anatom_dict = {rows[0]:rows[1] for rows in anatom}
     
+    
 with open("C:/Users/A N Other/motif_analysis/mat/brainmap_layers.csv", mode ="r") as inp:
     brainmap = csv.reader(inp)
     brainmap_dict = {rows[0]:rows[1] for rows in brainmap}
@@ -69,7 +70,7 @@ with open("C:/Users/A N Other/motif_analysis/data/motifs/count_ff_motifs.csv", m
          all_same = 0
          if spatial_dict.get(a) == spatial_dict.get(b) == spatial_dict.get(c):
              all_same += 1 
-             print(all_same)
+             #print(all_same)
                     
         # if (spatial_dict.get(a) == "Lateral" and spatial_dict.get(b) == "Lateral" and spatial_dict.get(c) == "Lateral"):
          

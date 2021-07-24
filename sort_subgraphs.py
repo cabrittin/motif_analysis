@@ -9,6 +9,9 @@ Tally is written to an excel spreadsheet, where the data can then be used to
 plot bar graphs (eg. can combine sets of data from different isoclasses to 
 compare frequencies).
 
+== adjusted == 12/7/21
+now runs with config
+
 @author: Phoebe Cullen
 @email: "cm20pic"+ <at>+ "leeds"+ "."+ "ac"+ "."+ "uk"
 @date: 2021-07-09

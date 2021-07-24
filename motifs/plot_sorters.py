@@ -54,7 +54,7 @@ def write_counter(data):
             if cell not in counter: counter[cell] = [0,0,0]
             counter[cell][i] += 1
 
-    csv_file = 'data/subgraph_position_counter.csv'
+    csv_file = 'data/subgraph_position_counter_isoclass2.csv'
     with open(csv_file, 'w') as csvfile:
         csvwriter = csv.writer(csvfile)
         for k,v in counter.items():

@@ -9,7 +9,7 @@ Callback functions for counting motifs
 """
 
 def aggregate_all(G,vertices,iso):
-    """Stores all motifs"""
+   #Stores all motifs
     tmp = [G.vs[v]['id'] for v in vertices]
     G.motif_store.append(tmp + [iso])
 
@@ -24,7 +24,10 @@ def count_fb(G,vertices,iso):
     if iso == 11:
         tmp = [G.vs[v]['id'] for v in vertices]
         G.motif_store.append(tmp)
-
-
-
+        
+def count_iso4(G,vertices,iso):
+    """Counts isoclass 4 motifs"""
+    if iso == 4:
+        tmp = [G.vs[v]['id'] for v in vertices]
+        G.motif_store.append(tmp)
 

@@ -40,7 +40,8 @@ if __name__=="__main__":
     
     # Count motifs
     counter = getattr(motif_counters, cfg['parameters']['counter_callback'])
-    G.motifs_randesu(size=3,callback=counter)    
+    G.motifs_randesu(size=3,callback=counter)  
+    
     
     # Write output 
     file = open(cfg['outputs']['motif_counts'], 'w+', newline ='')

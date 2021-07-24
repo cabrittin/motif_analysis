@@ -60,9 +60,11 @@ with open("C:/Users/A N Other/motif_analysis/data/motifs/count_ff_motifs.csv", m
          
          count = 0
          
+         print("(" + anatom_dict.get(a),anatom_dict.get(b),anatom_dict.get(c) + "), ")
+         
          if spatial_dict.get(a) == "Lateral" and spatial_dict.get(b) == "Taxis" and spatial_dict.get(c) == "Taxis":
             count = count + 1
-            print(count)
+            #(count)
          
          i = i + 1
         
