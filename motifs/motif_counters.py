@@ -25,8 +25,8 @@ def count_fb(G,vertices,iso):
         tmp = [G.vs[v]['id'] for v in vertices]
         G.motif_store.append(tmp)
         
-def count_iso4(G,vertices,iso):
-    """Counts isoclass 4 motifs"""
+def count_iso(G,vertices,iso):
+    """Counts isoclass [] motifs"""
     if iso == 4:
         tmp = [G.vs[v]['id'] for v in vertices]
         G.motif_store.append(tmp)

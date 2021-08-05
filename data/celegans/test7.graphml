@@ -4,12 +4,19 @@
 <node id="A"/>
 <node id="B"/>
 <node id="C"/>
+<node id="D"/>
+
+
 
 <edge source="A" target="B">
 </edge>
 <edge source="A" target="C">
 </edge>
 <edge source="B" target="C">
+</edge>
+<edge source="B" target="D">
+</edge>
+<edge source="D" target="C">
 </edge>
 </graph></graphml>
 

@@ -22,7 +22,7 @@ from igraph import Graph
 
 #Parameters
 
-subgraph_position_counter_data = "C:/Users/A N Other/motif_analysis/data/subgraph_position_counter_isoclass7.csv"
+subgraph_position_counter_data = "C:/Users/A N Other/motif_analysis/data/position_outputs/pos_counter_reordered_iso7_ALL.csv"
 assortment_type = "C:/Users/A N Other/motif_analysis/mat/spatial_domains.csv" 
 #assortment_type = "C:/Users/A N Other/motif_analysis/mat/anatomical_classification.csv"
 #assortment_type = "C:/Users/A N Other/motif_analysis/mat/brainmap_layers.csv"

@@ -2,7 +2,7 @@
 """
 @description:
 Correcting FANMOD ordering issue and reordering based on difference between input and output degree.
-Input = old count_motif outputs
+Input = old count_motif outputs (of specific isoclass)
 Output = writes new subgraph lists
 
 @author: Phoebe Cullen
@@ -64,7 +64,7 @@ if __name__=="__main__":
     #test_list = [["A", "C", "B"]]
     
     
-    file = open(cfg['outputs']['sorted_motifs'], 'w+', newline ='')
+    file = open(cfg['outputs']['outfile'], 'w+', newline ='')
     with file:
            write = csv.writer(file)
            
@@ -73,10 +73,10 @@ if __name__=="__main__":
         
                 res = sorted(subgraph_list[j], key = lambda ele: sort_dict[ele], reverse=True)
                 #print(res)
-                write.writerow(res)
+                write.writerow(res + [cfg['outputs']['isoclass']])
                 j = j+1
        
-    print(f"Wrote reordered motifs to: {cfg['outputs']['sorted_motifs']}")
+    print(f"Wrote reordered motifs to: {cfg['outputs']['outfile']}")
     
  
     
