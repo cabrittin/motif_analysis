@@ -1,7 +1,8 @@
 """
-@name: sorting subgraph lists based on categories .py
-@description: can be used for preprocessing before inputting subgraph list into
-position counter function
+@name: categorising_subgraphs.py
+@description: Sorting subgraph lists based on mat categories.
+Can be used for preprocessing before inputting subgraph list into
+position counter function.
 
 
 @author: Phoebe Cullen
@@ -9,16 +10,10 @@ position counter function
 @date: 2021-07-30
 """
 
-import os
 import argparse
 from configparser import ConfigParser,ExtendedInterpolation
-from igraph import Graph
 import csv
-import pprint
-from matplotlib import pyplot as plt
-import collections
-import numpy as np
-import pandas as pd
+
 
 CONFIG = 'configs/phoebeconfig.ini'
 if __name__=="__main__":

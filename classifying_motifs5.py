@@ -17,7 +17,7 @@ import pprint
 import xlsxwriter
 
 # create excel
-outWorkbook = xlsxwriter.Workbook("out.xlsx")
+outWorkbook = xlsxwriter.Workbook("sorting_and_class_outputs/classifying_motifs_synapse4.xlsx")
 outSheet = outWorkbook.add_worksheet()
 
 # write headers

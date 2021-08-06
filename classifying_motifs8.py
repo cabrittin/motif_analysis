@@ -1,7 +1,7 @@
 """
 @name: Analysing Isoclass 7 (FF).py
 @description:
-
+Use to set filter ffls depending on chosen constraints (ie. all same spatial domain)
 
 @author: Phoebe Cullen
 @email: "cm20pic"+ <at>+ "leeds"+ "."+ "ac"+ "."+ "uk"

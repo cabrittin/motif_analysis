@@ -1,6 +1,6 @@
 """
 @name: Sorting specific isoclass motifs into subgroups based on their pattern of /mat
-node characteristics. ===ALL_SAME==== 
+node characteristics. ===ALL SAME DOMAINS ==== 
 
 @description:
 Reads through the motif list for specific isoclass and categorises each 

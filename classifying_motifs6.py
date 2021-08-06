@@ -1,5 +1,5 @@
 """
-@name: classifying subgraphs (no print).py
+@name: classifying subgraphs.py
 @description:
 reads /mat csv files to dictionary and loops through aggregate_all_motifs.csv
 (from subgraph_4), classifying each.
